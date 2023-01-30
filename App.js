@@ -53,8 +53,6 @@ function stop(event){
     }
     event.preventDefault(); 
 }
-
-//let color=document.querySelector('.color-field');
    
 let clear_btn=document.querySelector('.btn');
 clear_btn.addEventListener('click',clear_canvas);
