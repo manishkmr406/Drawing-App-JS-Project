@@ -65,3 +65,22 @@ function clear_canvas(){
     ctx.fillRect(0,0,canvas.width,canvas.height);
 }
 
+let para=document.querySelector('p');
+let url='https://api.adviceslip.com/advice';
+
+    fetch(url)
+    .then((response) =>{
+        return response.json();
+    })
+    .then(data =>{
+      para.textContent=data.slip.advice;
+    })
+    .catch(error =>{
+        console,log(error);
+    })
+    
+    
+
+        
+    
+
